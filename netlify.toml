@@ -3,6 +3,9 @@
   publish = "dist"
   functions = "netlify/functions"
 
+[build.environment]
+  NODE_VERSION = "20"
+
 # Redirect API calls to local functions during dev and in production
 [[redirects]]
   from = "/api/*"
